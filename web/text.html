@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function tet() {
+            var test = document.getElementsByName("test");
+            var id=[];
+            var j=0;
+            for(var i=0;i<test.length;i++){
+                if(test[i].checked){
+                    alert(test[i].value);
+                    id[j]=test[i].value;
+                    j++;
+                }
+            }
+            alert(id);
+
+        }
+    </script>
+</head>
+<body>
+<form action="">
+    <input type="checkbox"name="test"value="go">
+    <input type="checkbox"name="test"value="sing">
+    <input type="checkbox"name="test"value="home">
+    <input type="checkbox"name="test"value="cao">
+    <input type="button"value="提交"onclick="tet()">
+</form>
+</body>
+</html>
